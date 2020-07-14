@@ -18,7 +18,7 @@ def fuzz(thr_id: int, inp: bytearray): # can type... but it's not checked...?
         fd.write(inp)
 
     # Run objdump until completion
-    sp = subprocess.Popen(["./objdump", "-d", tmpfn], 
+    sp = subprocess.Popen(["./objdump", "-x", tmpfn], 
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL)
     ret = sp.wait()
@@ -61,6 +61,12 @@ def worker(thr_id):
     print("worker")
     
     while True:
+        # Create a copy of an existing input from the corpus
+        inp = bytearray(random.choice(corpus))
+
+        for _ in range(random.randint(1, 8)):
+            inp[random.randint(0, len(inp))] = random.randint(0, 255)
+        
         # Pick a random input from our corpus
         fuzz(0, random.choice(corpus))
         
