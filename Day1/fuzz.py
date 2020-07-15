@@ -61,14 +61,15 @@ def worker(thr_id):
     print("worker")
     
     while True:
-        # Create a copy of an existing input from the corpus
+        # Create a copy of a random existing input from the corpus
         inp = bytearray(random.choice(corpus))
-
+        
+        # Mutate it
         for _ in range(random.randint(1, 8)):
             inp[random.randint(0, len(inp))] = random.randint(0, 255)
         
-        # Pick a random input from our corpus
-        fuzz(0, random.choice(corpus))
+        # Fuzz the mutated input
+        fuzz(thr_id, inp)
         
         # Update number of fuzz cases
         cases += 1
