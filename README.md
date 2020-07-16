@@ -10,3 +10,6 @@ More info @ Brandon Falk's socials!
 [Twitter](https://twitter.com/gamozolabs)
 
 [Youtube](https://www.youtube.com/user/gamozolabs)
+
+## Notes
+Due to my own schedule, I am not able to do this in real time. I am going over the VODs and am peeking in the livestream when I have the time!
