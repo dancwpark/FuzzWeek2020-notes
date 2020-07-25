@@ -51,7 +51,9 @@ raw and messy notes
     * llvm and clang
     * apt-get install clang-10 lldb-10 lld-10
 * `make`
-* need lld-10
+  * it is possible on new installation that the compiler (clang) symlinks will
+    be wonky.
+    * Create symlinks, edit Makefile, or just install clang.
 * This builds custom toolchain for risv64 without multiplies and divide
 * cd test_app; make
 * Can run in qemu
