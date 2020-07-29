@@ -8,4 +8,8 @@
   * Source code is available now on @gamozolabs github account!
   * Last code push from my own notetaking.
     * Will include fork in this repo for easy access later.
+    * Currently have fork @dancwpark/fuzz_with_emus
+    * Original is @gamozolabs/fuzzz_with_emus
+    
+* Stopped notes @ https://youtu.be/iM3s8-umRO0?t=28255
 
