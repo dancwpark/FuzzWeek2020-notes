@@ -11,5 +11,16 @@
     * Currently have fork @dancwpark/fuzz_with_emus
     * Original is @gamozolabs/fuzzz_with_emus
     
-* Stopped notes @ https://youtu.be/iM3s8-umRO0?t=28255
 
+* Code reorganization
+  * main.rs
+  * mmu.rs
+  * emulator.rs
+  * primitives.rs
+
+* VM/Emulator/MMu code is the bottleneck
+  * Probably going to write a JIT
+
+* Next day
+  * JIT
+  * Ramifications/consequences of all covered material.
