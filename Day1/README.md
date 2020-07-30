@@ -1,7 +1,8 @@
 # Fuzz Week - Day 1
-quick notse on non-code things
+quick notes on non-code things
 
 
+## Setting up target (objdump)
 * Installed 2003 binutils
 ```bash
 wget https://ftp.gnu.org/gnu/binutils/binutils-2.14.tar.gz
@@ -17,8 +18,8 @@ make clean
 CFLAGS="-O0 -g -gdwarf-2" ./configure 
 make
 ```
-
 * Copy ./objdump into objdump_fuzzer
+## Set up corpus \& fuzzer
 * Start working on a harness
   * Part of fuzzer that runs program and records crashes
   * Start by ignoring crashes
